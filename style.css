@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-image: url('img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 100vh;
+}
+
+@media (orientation: portrait) {
+  body {
+      background-image: url('img/background-vertical.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+  }
+}
+
+.container{
+  text-align: center;
+  padding-top: 10vh;
+}
+#temperature {
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hourly_temp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(74, 144, 226, 0.5);
+  border: 2px solid white;
+  color: white;
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  margin: 10px 0;
+}
+.hourly_temp h3,
+.hourly_temp h4 {
+  margin: 0;
+}
+h1,h2{
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25); 
+}
